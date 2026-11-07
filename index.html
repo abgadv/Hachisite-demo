@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hachiko — Fresh food for lifetime friends | Cairo</title>
+  <meta name="description" content="Cooked fresh, frozen at its best. Human-grade pet food made in Cairo since 2016. Recipes for puppies, adult dogs, senior dogs, and cats, delivered across Greater Cairo.">
+  <meta name="theme-color" content="#122A22">
+  <meta property="og:title" content="Hachiko — Fresh food for lifetime friends">
+  <meta property="og:description" content="Cooked fresh, frozen at its best. Human-grade pet food made in Cairo since 2016. Delivered across Greater Cairo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="Assets/img/favicon-192.png">
+  <link rel="preload" href="Assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="Assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Hachiko — back to top">
+        <img src="Assets/img/logo.png" alt="Hachiko" width="300" height="104">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a class="nav-link" href="#menu" data-nav="menu">Menu</a>
+        <a class="nav-link" href="#bowl" data-nav="bowl">Bowl builder</a>
+        <a class="nav-link" href="#ritual" data-nav="ritual">The ritual</a>
+        <a class="nav-link" href="#story" data-nav="story">Our story</a>
+        <a class="nav-link" href="#why" data-nav="why">Why Hachiko</a>
+        <a class="nav-link" href="#faq" data-nav="faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-sm btn-primary header-cta" href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">
+          Talk to us <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <nav aria-label="Mobile">
+        <a class="mobile-nav-link" href="#menu"><span class="mobile-nav-num">01</span><span>The menu</span></a>
+        <a class="mobile-nav-link" href="#bowl"><span class="mobile-nav-num">02</span><span>Bowl builder</span></a>
+        <a class="mobile-nav-link" href="#ritual"><span class="mobile-nav-num">03</span><span>The ritual</span></a>
+        <a class="mobile-nav-link" href="#story"><span class="mobile-nav-num">04</span><span>Our story</span></a>
+        <a class="mobile-nav-link" href="#why"><span class="mobile-nav-num">05</span><span>Why Hachiko</span></a>
+        <a class="mobile-nav-link" href="#gift"><span class="mobile-nav-num">06</span><span>Gifting</span></a>
+        <a class="mobile-nav-link" href="#stories"><span class="mobile-nav-num">07</span><span>The wall</span></a>
+        <a class="mobile-nav-link" href="#faq"><span class="mobile-nav-num">08</span><span>FAQ</span></a>
+      </nav>
+      <div class="mobile-nav-foot">
+        <a class="btn btn-primary" href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">Talk to us on Facebook <span class="arrow" aria-hidden="true">↗</span></a>
+        <p>Cooked fresh in Cairo. Delivered across Greater Cairo.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span class="line">They wait</span>
+            <span class="line">all day</span>
+            <span class="line">for <em>this</em>.</span>
+          </h1>
+
+          <p class="hero-sub">Cooked fresh. Frozen at its best. Made with human-grade ingredients for the one who hears your car before you do.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#bowl">Build their bowl <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#menu">See the menu</a>
+          </div>
+
+          <dl class="hero-facts" aria-label="Hachiko at a glance">
+            <div class="fact">
+              <dt>Raw materials</dt>
+              <dd>Human-grade</dd>
+            </div>
+            <div class="fact">
+              <dt>Every pack</dt>
+              <dd>500 g</dd>
+            </div>
+            <div class="fact">
+              <dt>In the freezer</dt>
+              <dd>3 months</dd>
+            </div>
+            <div class="fact">
+              <dt>Home delivery</dt>
+              <dd>Cairo &amp; Giza</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-stage" id="hero-stage">
+            <p class="sr-only" aria-live="polite"><span id="hero-name">Adult</span>, <span id="hero-detail">+30% protein · 1–7 years</span></p>
+            <span class="sr-only" id="hero-index">02</span>
+
+            <div class="pack-wheel" id="pack-wheel">
+              <button class="pack-wheel-arrow pack-wheel-prev" id="pack-prev" type="button" aria-label="Previous recipe">
+                <span aria-hidden="true">←</span>
+              </button>
+
+              <div class="pack-wheel-viewport">
+                <div class="pack-wheel-stage" id="pack-wheel-stage" role="group" aria-label="Choose a featured recipe">
+                  <button class="pack-slide is-left" type="button" data-pack="puppy" aria-pressed="false" tabindex="-1" aria-label="Show Puppy">
+                    <span class="pack-slide-frame"><img src="Assets/img/pack-puppy-sm.webp" width="480" height="653" alt="" loading="eager" decoding="async"></span>
+                    <span class="pack-slide-name">Puppy</span>
+                  </button>
+                  <button class="pack-slide is-active" type="button" data-pack="adult" aria-pressed="true" aria-label="Show Adult">
+                    <span class="pack-slide-frame"><img src="Assets/img/pack-adult-sm.webp" width="480" height="645" alt="" loading="eager" decoding="async"></span>
+                    <span class="pack-slide-name">Adult</span>
+                  </button>
+                  <button class="pack-slide is-right" type="button" data-pack="senior" aria-pressed="false" tabindex="-1" aria-label="Show Senior">
+                    <span class="pack-slide-frame"><img src="Assets/img/pack-senior-sm.webp" width="480" height="689" alt="" loading="eager" decoding="async"></span>
+                    <span class="pack-slide-name">Senior</span>
+                  </button>
+                  <button class="pack-slide is-back" type="button" data-pack="cats" aria-pressed="false" tabindex="-1" aria-label="Show Cats">
+                    <span class="pack-slide-frame"><img src="Assets/img/pack-cats-sm.webp" width="480" height="689" alt="" loading="eager" decoding="async"></span>
+                    <span class="pack-slide-name">Cats</span>
+                  </button>
+                </div>
+              </div>
+
+              <button class="pack-wheel-arrow pack-wheel-next" id="pack-next" type="button" aria-label="Next recipe">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== MENU ============================== -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="chapter">01</span> The menu</p>
+          <h2 id="menu-title">Four recipes. <em>One very good reason.</em></h2>
+          <p class="lede">Every pack is 500 g of cooked, frozen food made from human-grade ingredients. Choose by the stage they’re in — not the size of the bag.</p>
+        </div>
+
+        <div class="menu-toolbar reveal">
+          <div class="filters" role="group" aria-label="Filter recipes">
+            <button class="filter" type="button" data-filter="all" aria-pressed="true">All four</button>
+            <button class="filter" type="button" data-filter="dogs" aria-pressed="false">For dogs</button>
+            <button class="filter" type="button" data-filter="cats" aria-pressed="false">For cats</button>
+          </div>
+          <p class="menu-count" id="menu-count" aria-live="polite">Showing 4 recipes</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" data-kind="dogs" style="--product-accent:#F19022;--product-tint:#FBEAD3;--product-ink:#A9520A;">
+            <div class="product-visual">
+              <p class="product-kicker">For dogs <span>·</span> 2–12 months</p>
+              <span class="protein-tag">+40% protein</span>
+              <img src="Assets/img/pack-puppy.webp" srcset="Assets/img/pack-puppy-sm.webp 480w, Assets/img/pack-puppy.webp 900w" sizes="(max-width: 700px) 70vw, 250px" width="900" height="1225" loading="lazy" decoding="async" alt="Hachiko Puppy fresh food pack">
+            </div>
+            <div class="product-body">
+              <p class="product-stage">Puppy</p>
+              <h3>For the growing up.</h3>
+              <p class="product-copy">More protein and a higher pour of olive oil for the months when everything is growing at once. Balanced minerals and vitamins do the rest.</p>
+              <p class="product-note">Special recipes available for disabilities and allergies.</p>
+              <button class="btn btn-outline product-pick" type="button" data-explore="puppy" aria-haspopup="dialog">Explore <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-kind="dogs" style="--product-accent:#0F6B5B;--product-tint:#DCEDE8;--product-ink:#0F6B5B;">
+            <div class="product-visual">
+              <p class="product-kicker">For dogs <span>·</span> 1–7 years</p>
+              <span class="protein-tag">+30% protein</span>
+              <img src="Assets/img/pack-adult.webp" srcset="Assets/img/pack-adult-sm.webp 480w, Assets/img/pack-adult.webp 900w" sizes="(max-width: 700px) 70vw, 250px" width="900" height="1209" loading="lazy" decoding="async" alt="Hachiko Adult fresh food pack">
+            </div>
+            <div class="product-body">
+              <p class="product-stage">Adult</p>
+              <h3>For the good years.</h3>
+              <p class="product-copy">Solid structure, steady energy. Moderate protein balanced with everything else, for the long stretch of ordinary, excellent days.</p>
+              <p class="product-note">Special recipes available for diabetes and allergies.</p>
+              <button class="btn btn-outline product-pick" type="button" data-explore="adult" aria-haspopup="dialog">Explore <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-kind="dogs" style="--product-accent:#5C635F;--product-tint:#E8E6DF;--product-ink:#4A524E;">
+            <div class="product-visual">
+              <p class="product-kicker">For dogs <span>·</span> over 7 years</p>
+              <span class="protein-tag">+20% protein</span>
+              <img src="Assets/img/pack-senior.webp" srcset="Assets/img/pack-senior-sm.webp 480w, Assets/img/pack-senior.webp 900w" sizes="(max-width: 700px) 70vw, 250px" width="900" height="1291" loading="lazy" decoding="async" alt="Hachiko Senior fresh food pack">
+            </div>
+            <div class="product-body">
+              <p class="product-stage">Senior</p>
+              <h3>For the gentle years.</h3>
+              <p class="product-copy">A calmer pace calls for less protein and more carbohydrate support, with the same minerals and vitamins. Softly does it.</p>
+              <p class="product-note">Special recipes available for diabetes and allergies.</p>
+              <button class="btn btn-outline product-pick" type="button" data-explore="senior" aria-haspopup="dialog">Explore <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-kind="cats" style="--product-accent:#A93232;--product-tint:#F4DEDC;--product-ink:#A93232;">
+            <div class="product-visual">
+              <p class="product-kicker">For cats <span>·</span> 2 months +</p>
+              <span class="protein-tag">+55% protein</span>
+              <img src="Assets/img/pack-cats.webp" srcset="Assets/img/pack-cats-sm.webp 480w, Assets/img/pack-cats.webp 900w" sizes="(max-width: 700px) 70vw, 250px" width="900" height="1291" loading="lazy" decoding="async" alt="Hachiko Cats fresh food pack">
+            </div>
+            <div class="product-body">
+              <p class="product-stage">Cats</p>
+              <h3>For the independent one.</h3>
+              <p class="product-copy">65% pure animal protein, 35% balanced vegetables, and olive oil. Chicken, fish, or chicken liver — all ages from two months.</p>
+              <p class="product-note">Special recipes available for diabetes and allergies.</p>
+              <button class="btn btn-outline product-pick" type="button" data-explore="cats" aria-haspopup="dialog">Explore <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-fineprint reveal">Every pack: human-grade raw materials · no artificial flavours, chemicals, or preservatives · olive oil for immune support · 500 g · cooked, frozen, and good for three months.</p>
+
+        <aside class="special-strip reveal" aria-labelledby="special-title">
+          <div>
+            <p class="eyebrow"><span class="chapter">Special</span> Recipes</p>
+            <h3 id="special-title">For the pets with a longer list of needs.</h3>
+            <p>Diabetes, allergies, disabilities, weight goals, or a famously picky palate — the kitchen can tailor a recipe around the care your pet needs. It is food, not a substitute for veterinary advice.</p>
+          </div>
+          <a class="btn btn-dark" href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">Ask about a special recipe <span class="arrow" aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================== BOWL BUILDER ============================== -->
+    <section class="section builder-section" id="bowl" aria-labelledby="bowl-title">
+      <div class="container builder-grid">
+        <div class="builder-copy">
+          <div class="section-head section-head-dark reveal">
+            <p class="eyebrow eyebrow-light"><span class="chapter">02</span> Bowl builder</p>
+            <h2 id="bowl-title" tabindex="-1">Build a bowl <em>that fits them.</em></h2>
+            <p class="lede">Tell us who’s at the table. We’ll match the recipe and the protein, then the team can size the portions around your pet.</p>
+          </div>
+
+          <form class="builder-form" id="builder-form">
+            <fieldset class="builder-field reveal">
+              <legend><span class="step-no">01</span> Who’s eating?</legend>
+              <div class="chip-row chip-row-2">
+                <input class="sr-only" type="radio" name="species" id="species-dog" value="dog" checked>
+                <label class="chip" for="species-dog">A dog</label>
+                <input class="sr-only" type="radio" name="species" id="species-cat" value="cat">
+                <label class="chip" for="species-cat">A cat</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="builder-field reveal" id="stage-field">
+              <legend><span class="step-no">02</span> Life stage</legend>
+              <div class="chip-row chip-row-3">
+                <input class="sr-only" type="radio" name="stage" id="stage-puppy" value="puppy">
+                <label class="chip" for="stage-puppy">Puppy <span>2–12 mo</span></label>
+                <input class="sr-only" type="radio" name="stage" id="stage-adult" value="adult" checked>
+                <label class="chip" for="stage-adult">Adult <span>1–7 yr</span></label>
+                <input class="sr-only" type="radio" name="stage" id="stage-senior" value="senior">
+                <label class="chip" for="stage-senior">Senior <span>7+ yr</span></label>
+              </div>
+            </fieldset>
+
+            <p class="cat-stage-note" id="cat-stage-note" hidden><span class="step-no">02</span> Cats eat from two months, at every age. No stage to choose — just a good bowl.</p>
+
+            <fieldset class="builder-field reveal">
+              <legend><span class="step-no">03</span> Protein</legend>
+              <div class="chip-row chip-row-protein" id="protein-row">
+                <input class="sr-only" type="radio" name="protein" id="protein-chicken" value="chicken" checked>
+                <label class="chip" for="protein-chicken">Chicken</label>
+                <input class="sr-only" type="radio" name="protein" id="protein-beef-liver" value="beef-liver">
+                <label class="chip" for="protein-beef-liver">Beef liver</label>
+                <input class="sr-only" type="radio" name="protein" id="protein-fish" value="fish">
+                <label class="chip" for="protein-fish">Fish</label>
+                <input class="sr-only" type="radio" name="protein" id="protein-mixed" value="mixed">
+                <label class="chip" for="protein-mixed">Chicken &amp; beef liver</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="builder-field builder-special reveal">
+              <legend><span class="step-no">04</span> Anything special?</legend>
+              <div class="check-line">
+                <input class="check-input" type="checkbox" id="special" name="special">
+                <label class="check-label" for="special">This bowl is for a special condition</label>
+              </div>
+              <p class="field-help">Diabetes, allergies, disabilities, weight goals, or a picky appetite. The kitchen can tailor it; it doesn’t replace veterinary care.</p>
+              <div class="special-detail" id="special-detail-wrap" hidden>
+                <label for="special-detail">Tell us what to plan around</label>
+                <textarea id="special-detail" name="special-detail" rows="2" maxlength="220" placeholder="Diabetes, an allergy, weight goals, or anything the kitchen should know."></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="bowl-panel reveal" id="bowl-panel">
+          <div class="bowl-stage">
+            <p class="bowl-tag" id="bowl-tag">For a dog · adult</p>
+
+            <div class="bowl-recommendation">
+              <div class="rec-pack-wrap">
+                <img id="rec-pack" src="Assets/img/pack-adult-sm.webp" width="480" height="645" alt="Hachiko Adult pack">
+              </div>
+              <div class="rec-copy">
+                <p class="rec-kicker">Your starting bowl</p>
+                <h3 id="rec-title">Adult · Chicken</h3>
+                <p id="rec-copy">Balanced protein for the steady, ordinary, excellent adult years.</p>
+                <p class="rec-price" id="rec-price">45 EGP <span>/ 500 g pack</span></p>
+                <div class="protein-meter">
+                  <div class="meter-head">
+                    <span id="protein-label">Chicken meat</span>
+                    <strong id="protein-value">+20%</strong>
+                  </div>
+                  <div class="meter-track" aria-hidden="true"><span id="meter-fill"></span></div>
+                </div>
+                <p class="rec-fineprint">A starting point, not a portion prescription. The team will calculate the amount for your pet and follow up on weight.</p>
+                <div class="order-row">
+                  <div class="pack-count">
+                    <span class="pack-count-label">Packs</span>
+                    <div class="pack-count-control">
+                      <button class="pack-step" type="button" id="pack-minus" aria-label="Remove one pack" disabled>−</button>
+                      <output id="pack-count" aria-live="polite">1</output>
+                      <button class="pack-step" type="button" id="pack-plus" aria-label="Add one pack">+</button>
+                    </div>
+                  </div>
+                  <p class="order-total"><strong id="order-total">45 EGP</strong><span>pack total</span></p>
+                </div>
+                <div class="rec-actions">
+                  <button class="btn btn-primary" type="button" id="add-to-cart">
+                    Add to cart
+                    <span class="cart-badge" id="add-cart-count" hidden>0</span>
+                    <span class="arrow" aria-hidden="true">+</span>
+                  </button>
+                  <button class="btn btn-ghost" type="button" id="order-whatsapp">Order via WhatsApp <span class="arrow" aria-hidden="true">↗</span></button>
+                </div>
+                <p class="rec-cart-hint" id="add-to-cart-hint">Adds <span id="add-cart-packs">1 pack</span> of this bowl to your cart. You can change packs there.</p>
+              </div>
+            </div>
+            <p class="sr-only" id="builder-live" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== RITUAL ============================== -->
+    <section class="section ritual-section" id="ritual" aria-labelledby="ritual-title">
+      <div class="container">
+        <div class="section-head section-head-wide reveal">
+          <p class="eyebrow"><span class="chapter">03</span> The ritual</p>
+          <h2 id="ritual-title">From freezer to <em>full-hearted.</em></h2>
+          <p class="lede">Dinner should be the easiest part of the day. Four steps, one microwave, no thawing overnight.</p>
+        </div>
+
+        <div class="ritual-grid">
+          <div class="step-list reveal" id="step-list">
+            <div class="step">
+              <button class="step-trigger" type="button" aria-expanded="true" aria-controls="step-1">
+                <span class="step-no">01</span>
+                <span class="step-title">Out of the freezer.</span>
+                <span class="step-icon" aria-hidden="true"></span>
+              </button>
+              <div class="step-panel" id="step-1">
+                <p>Take a pack out of the freezer. The outer sleeve keeps the inner pack clean and easy to handle.</p>
+              </div>
+            </div>
+            <div class="step">
+              <button class="step-trigger" type="button" aria-expanded="false" aria-controls="step-2">
+                <span class="step-no">02</span>
+                <span class="step-title">Free the inner pack.</span>
+                <span class="step-icon" aria-hidden="true"></span>
+              </button>
+              <div class="step-panel" id="step-2" hidden>
+                <p>Slide the sealed inner pack out of the outer pack. That’s the part that goes into the microwave.</p>
+              </div>
+            </div>
+            <div class="step">
+              <button class="step-trigger" type="button" aria-expanded="false" aria-controls="step-3">
+                <span class="step-no">03</span>
+                <span class="step-title">Four to five minutes.</span>
+                <span class="step-icon" aria-hidden="true"></span>
+              </button>
+              <div class="step-panel" id="step-3" hidden>
+                <p>Microwave the inner pack. Four and a half minutes sits right in the middle of the range.</p>
+              </div>
+            </div>
+            <div class="step">
+              <button class="step-trigger" type="button" aria-expanded="false" aria-controls="step-4">
+                <span class="step-no">04</span>
+                <span class="step-title">Open, rest, serve.</span>
+                <span class="step-icon" aria-hidden="true"></span>
+              </button>
+              <div class="step-panel" id="step-4" hidden>
+                <p>Open the pack, let it rest a moment so it isn’t too hot, then serve. Listen for the bowl.</p>
+              </div>
+            </div>
+            <p class="step-footnote">Microwave times vary. Check that the middle is warm, not hot, before serving, and follow your vet’s advice for your pet.</p>
+            <a class="text-link" href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">Tell us how they liked it <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+
+          <figure class="ritual-visual reveal">
+            <div class="ritual-visual-media">
+              <img src="Assets/Bowl/bowl.webp" width="1200" height="850" alt="A Hachiko bowl filled with fresh chicken, rice, carrots, and peas" loading="lazy">
+            </div>
+            <figcaption class="ritual-visual-caption">
+              <span class="ritual-visual-kicker">Served fresh</span>
+              <p>Real chicken, rice, carrots, and peas. Cooked, frozen, and ready in four and a half minutes.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== STORY ============================== -->
+    <section class="section story-section" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <aside class="story-aside">
+          <p class="eyebrow"><span class="chapter">04</span> Our story</p>
+          <div class="story-seal" role="img" aria-label="Certified pet nutrition">
+            <span class="story-seal-en">Certified<br>pet nutrition</span>
+          </div>
+        </aside>
+
+        <div class="story-body">
+          <h2 id="story-title" class="reveal">We named a company after a dog <em>who waited.</em></h2>
+          <p class="story-lead reveal">Not because he was famous. Because he kept showing up.</p>
+
+          <div class="story-text reveal">
+            <p>Hachiko, the Japanese dog, waited at Shibuya Station every day for his person. The story is almost a hundred years old and still does the same thing to us: it makes loyalty look simple.</p>
+            <p>In July 2016, we started with one recipe in a room inside an apartment, fewer than ten customers, and two delivery spots. We called the little dream <strong>HACHIKO</strong> to keep that story close.</p>
+            <p>With four years of love, passion, and experience, Hachiko was founded as the first officially certified fresh food company in the Egyptian market. We are a family inspired by passion, and a company directed by science. Today there are more than 20 recipes, hundreds of families, a network of vets and pet shops, and a delivery team that covers Greater Cairo.</p>
+          </div>
+
+          <blockquote class="story-quote reveal">
+            <p>“We do not sell products. We provide a complete feeding experience.”</p>
+          </blockquote>
+
+          <figure class="team-figure reveal">
+            <button class="team-photo-btn" type="button" data-open-photo aria-label="Open the Hachiko family photo larger">
+              <img src="Assets/img/team.webp" srcset="Assets/img/team-sm.webp 800w, Assets/img/team.webp 1600w" sizes="(max-width: 900px) 92vw, 720px" width="1600" height="888" loading="lazy" decoding="async" alt="The Hachiko team standing together under a tent beside their banner">
+              <span class="team-photo-hint">Open the photo <span aria-hidden="true">↗</span></span>
+            </button>
+            <figcaption>The family behind the packs — and the reason the doorbell still matters.</figcaption>
+          </figure>
+
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <p class="timeline-year">July 2016</p>
+              <p class="timeline-text">One recipe. One room inside an apartment. Fewer than ten customers, and two places to deliver.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-year">Today</p>
+              <p class="timeline-text">More than 20 recipes. Hundreds of families. A network of vets and pet shops, and home delivery across Greater Cairo.</p>
+            </div>
+          </div>
+
+          <p class="story-family reveal">Our family? <em>It’s you.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== WHY ============================== -->
+    <section class="section why-section" id="why" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <div class="why-intro reveal">
+          <p class="eyebrow"><span class="chapter">05</span> Why Hachiko</p>
+          <h2 id="why-title">The reasons the bowl <em>comes back empty.</em></h2>
+          <p class="lede">We’re not trying to be the biggest name in pet food. We’re trying to be the one your pet checks the door for.</p>
+          <p class="why-aside">“As natural as human food” isn’t a slogan we borrowed. It’s the standard we shop by.</p>
+        </div>
+
+        <div class="why-list">
+          <article class="why-row reveal">
+            <h3>Human-grade, all the way down.</h3>
+            <p>Every raw material is human-grade. No leftovers, no preservatives, no artificial flavours, no chemicals.</p>
+          </article>
+          <article class="why-row reveal">
+            <h3>Olive oil in every recipe.</h3>
+            <p>Olive oil is a source of omega-3 and part of every recipe, for immune support. It is one of the few ingredients we will not leave out.</p>
+          </article>
+          <article class="why-row reveal">
+            <h3>Recipes that flex.</h3>
+            <p>Special recipes for diabetes, allergies, disabilities, weight goals, and owner preferences. Made around the pet in front of us.</p>
+          </article>
+          <article class="why-row reveal">
+            <h3>A complete feeding experience.</h3>
+            <p>We help you calculate the right amount, handle health conditions, and follow up on weight — not just hand over a pack.</p>
+          </article>
+          <article class="why-row reveal">
+            <h3>Delivered across Greater Cairo.</h3>
+            <p>Cairo and Giza, with no minimum quantity and a flexible time frame. Vets and pet shops are part of the network too.</p>
+          </article>
+          <article class="why-row reveal">
+            <h3>A team that picks up.</h3>
+            <p>Nutrition and behaviour guidance, help choosing a new furry friend, and complaints treated as our lighthouse. We’d rather hear it from you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== GIFTING ============================== -->
+    <section class="section gift-section" id="gift" aria-labelledby="gift-title">
+      <div class="container gift-grid">
+        <div class="gift-copy reveal">
+          <p class="eyebrow eyebrow-ink"><span class="chapter chapter-ink">06</span> Gifting</p>
+          <h2 id="gift-title">The gift that <em>gets eaten.</em></h2>
+          <p class="lede">Fresh Hachiko dinners, wrapped with a note from you. Tell us who it’s for; the team will help choose the recipes and arrange the delivery.</p>
+
+          <form class="gift-form" id="gift-form">
+            <div class="field">
+              <label for="gift-name-input">Who is it for?</label>
+              <input id="gift-name-input" name="gift-name" type="text" maxlength="24" placeholder="Their name" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="gift-note-input">Your note <span id="gift-count">0 / 90</span></label>
+              <textarea id="gift-note-input" name="gift-note" rows="3" maxlength="90" placeholder="Something they’ll read before the first bowl."></textarea>
+            </div>
+          </form>
+
+          <div class="gift-actions">
+            <a class="btn btn-dark" href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">Plan this gift with us <span class="arrow" aria-hidden="true">↗</span></a>
+            <button class="btn btn-text" type="button" id="gift-copy">Copy the note</button>
+          </div>
+          <p class="gift-fineprint">No checkout here. Gifts are arranged directly with the team, so the meals and the note arrive together.</p>
+        </div>
+
+        <div class="gift-preview-wrap reveal">
+          <p class="preview-label">Live preview <span aria-hidden="true">·</span> not a voucher</p>
+          <article class="gift-preview" aria-label="Gift note preview">
+            <div class="gift-preview-top">
+              <img src="Assets/img/logo.png" alt="Hachiko" width="300" height="104">
+            </div>
+            <p class="gift-preview-kicker">A gift of fresh dinners</p>
+            <p class="gift-preview-for">For <span id="gift-name">someone patient</span></p>
+            <p class="gift-preview-note" id="gift-note">Because they wait by the door.</p>
+            <div class="gift-preview-bottom">
+              <span>Hachiko · Cairo</span>
+              <span>Cooked fresh · frozen</span>
+            </div>
+          </article>
+          <p class="gift-preview-foot">Made in Cairo. Named after a dog who waited.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== STORIES / PLACEHOLDERS ============================== -->
+    <section class="section stories-section" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head section-head-wide reveal">
+          <p class="eyebrow"><span class="chapter">07</span> The wall</p>
+          <h2 id="stories-title">Empty bowls. <em>Real stories.</em></h2>
+          <p class="lede">We’d rather leave this wall honestly open than fill it with words we wrote ourselves. When Hachiko families send their stories, they’ll live here. Yours could be the first.</p>
+        </div>
+
+        <div class="story-wall">
+          <!-- Placeholder: replace each card with a real, permissioned customer story. -->
+          <article class="story-card reveal">
+            <span class="story-card-mark" aria-hidden="true">“</span>
+            <p class="story-card-prompt">The first time they licked the bowl clean.</p>
+            <span class="story-card-line" aria-hidden="true"></span>
+            <span class="story-card-tag">Open slot · your story</span>
+          </article>
+          <article class="story-card reveal">
+            <span class="story-card-mark" aria-hidden="true">“</span>
+            <p class="story-card-prompt">The picky one who finally asked for more.</p>
+            <span class="story-card-line" aria-hidden="true"></span>
+            <span class="story-card-tag">Open slot · your story</span>
+          </article>
+          <article class="story-card reveal">
+            <span class="story-card-mark" aria-hidden="true">“</span>
+            <p class="story-card-prompt">The senior who found their appetite again.</p>
+            <span class="story-card-line" aria-hidden="true"></span>
+            <span class="story-card-tag">Open slot · your story</span>
+          </article>
+        </div>
+
+        <div class="stories-cta reveal">
+          <a class="btn btn-outline" href="https://www.instagram.com/hachikofriends/" target="_blank" rel="noopener">Share your story on Instagram <span class="arrow" aria-hidden="true">↗</span></a>
+          <p>Tag <strong>@hachikofriends</strong> or send us a message. We’ll ask before we share it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FAQ ============================== -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <p class="eyebrow"><span class="chapter">08</span> FAQ</p>
+          <h2 id="faq-title">Questions, <em>answered.</em></h2>
+          <p class="lede">The things people ask before the first bowl. If yours isn’t here, the team is one message away.</p>
+          <a class="text-link" href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">Message the team <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>
+              <span>What’s actually in a Hachiko pack?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Human-grade animal protein, olive oil, and — for cats — a balance of four kinds of vegetables. For dogs, the recipe is built around the stage: more protein for puppies, moderate for adults, lighter for seniors, always with the minerals and vitamins they need.</p>
+              <p>Every 500 g pack is cooked, frozen, and free from artificial flavours, chemicals, and preservatives.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Where do you deliver?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Across Greater Cairo — Cairo and Giza — with no minimum quantity and a flexible time frame. Vets and pet shops are part of the network too.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How long does it keep?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Each pack is good for three months in the freezer. Keep it frozen until mealtime, then follow the four-step ritual on this page.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Can you cook for allergies, diabetes, or other conditions?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Special recipes are available for medical cases such as diabetes, allergies, and disabilities. Tell the team what your vet has advised and what your pet needs; the kitchen can tailor the recipe around it. Hachiko food is not a substitute for veterinary care.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How much should I feed?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>That depends on age, weight, and condition — so the team calculates it with you rather than guessing on a bag. They also follow up to help maintain the right weight and body structure. Message them with your pet’s details to get a portion plan.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Can I choose the protein?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Each recipe has its own protein options: Puppy and Senior come in chicken, beef liver, or a mix; Adult adds fish; and Cats come in chicken, chicken liver, fish, or a mix. Choose one in the bowl builder, and the team will confirm availability for your recipe.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you offer gifting?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes — fresh dinners wrapped with a note from you. Use the gift note preview above, then message the team to choose the recipes and arrange delivery.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Assets/img/logo.png" alt="Hachiko" width="300" height="104" loading="lazy">
+          <p class="footer-line">Do you care? <em>We do.</em></p>
+        </div>
+        <a class="footer-cta" href="#bowl">Find their bowl <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-label">Explore</p>
+          <a href="#menu">The menu</a>
+          <a href="#bowl">Bowl builder</a>
+          <a href="#ritual">The ritual</a>
+          <a href="#story">Our story</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Say hello</p>
+          <a href="https://www.facebook.com/hachikofriends/" target="_blank" rel="noopener">Facebook <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/hachikofriends/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          <p class="footer-note">A real person on the other side.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Delivery</p>
+          <p>Cairo &amp; Giza</p>
+          <p>No minimum quantity</p>
+          <p>Flexible timing</p>
+          <p class="footer-note">Vets and pet shops included.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Until next time</p>
+          <p class="footer-signoff">See you at dinner.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Hachiko. All rights reserved.</p>
+        <p>Made in Cairo. Named after a dog who waited.</p>
+        <a href="#top" class="footer-top-link">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="photo-dialog" id="photo-dialog" aria-labelledby="photo-dialog-title">
+    <div class="photo-dialog-inner">
+      <div class="photo-dialog-head">
+        <h2 id="photo-dialog-title">The Hachiko family</h2>
+        <button class="photo-dialog-close" type="button" id="photo-dialog-close" aria-label="Close photo">×</button>
+      </div>
+      <img src="Assets/img/team.webp" width="1600" height="888" alt="The Hachiko team standing together under a tent beside their banner">
+      <p class="photo-dialog-caption">The people behind the packs. The family is still the point.</p>
+    </div>
+  </dialog>
+
+  <dialog class="recipe-dialog" id="recipe-dialog" aria-labelledby="recipe-dialog-title">
+    <div class="recipe-dialog-inner">
+      <div class="recipe-dialog-head">
+        <p class="recipe-dialog-kicker" id="recipe-dialog-kicker">For dogs · 1–7 years</p>
+        <button class="photo-dialog-close" type="button" id="recipe-dialog-close" aria-label="Close recipe details">×</button>
+      </div>
+
+      <div class="recipe-dialog-grid">
+        <div class="recipe-dialog-visual">
+          <div class="recipe-dialog-pack">
+            <img id="recipe-dialog-pack" src="Assets/img/pack-adult.webp" width="900" height="1209" alt="Hachiko Adult fresh food pack">
+          </div>
+          <p class="recipe-dialog-pack-caption">One 500 g pack, whatever the protein. Cooked, frozen, good for three months.</p>
+        </div>
+
+        <div class="recipe-dialog-body">
+          <h2 id="recipe-dialog-title">Adult</h2>
+          <p class="recipe-dialog-copy" id="recipe-dialog-copy">Solid structure, steady energy, and a balanced recipe for the long stretch of ordinary, excellent days.</p>
+
+          <div class="recipe-proteins" id="recipe-proteins" role="group" aria-label="Choose a protein"></div>
+
+          <div class="recipe-meta" aria-live="polite">
+            <div>
+              <span>Protein base</span>
+              <strong id="recipe-base">+20% chicken meat</strong>
+            </div>
+            <div>
+              <span>Price</span>
+              <strong id="recipe-price">45 EGP</strong>
+            </div>
+            <div>
+              <span>Pack</span>
+              <strong>500 g</strong>
+            </div>
+          </div>
+
+          <div class="recipe-ingredients-block">
+            <p class="recipe-label">What’s inside</p>
+            <ul class="recipe-ingredients" id="recipe-ingredients"></ul>
+          </div>
+
+          <p class="recipe-note">Olive oil is part of every recipe, for omega-3 and immune support. Percentages are per pack.</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="cart-layer" id="cart-layer" hidden>
+    <button class="cart-backdrop" type="button" id="cart-backdrop" aria-label="Close the cart" tabindex="-1"></button>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-head">
+        <div>
+          <p class="cart-kicker">Your order</p>
+          <h2 id="cart-title">The cart</h2>
+        </div>
+        <button class="photo-dialog-close" type="button" id="cart-close" aria-label="Close the cart">×</button>
+      </div>
+
+      <div class="cart-body">
+        <div class="cart-empty" id="cart-empty">
+          <p class="cart-empty-title">Nothing in the cart yet.</p>
+          <p class="cart-empty-copy">Build a bowl, set the packs, then add it. Everything stays right here until you send it on WhatsApp.</p>
+        </div>
+        <ul class="cart-items" id="cart-items"></ul>
+      </div>
+
+      <div class="cart-foot">
+        <div class="cart-totals">
+          <p class="cart-total-line"><span id="cart-packs">0 packs</span><strong id="cart-total">0 EGP</strong></p>
+          <p class="cart-foot-note">Prices stay on the site. The WhatsApp message carries your name, location, packs and any special conditions.</p>
+        </div>
+        <button class="btn btn-primary cart-order" type="button" id="cart-whatsapp" disabled>Order on WhatsApp <span class="arrow" aria-hidden="true">↗</span></button>
+        <button class="cart-clear" type="button" id="cart-clear" disabled>Empty the cart</button>
+      </div>
+    </aside>
+  </div>
+
+  <button class="cart-fab" type="button" id="cart-fab" hidden aria-haspopup="dialog" aria-controls="cart-drawer">
+    <span class="cart-fab-label">Cart</span>
+    <span class="cart-fab-count" id="cart-fab-count">0</span>
+    <span class="cart-fab-total" id="cart-fab-total">0 EGP</span>
+  </button>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <form class="order-dialog-inner" id="order-form">
+      <div class="order-dialog-head">
+        <div>
+          <p class="order-dialog-kicker">One last step</p>
+          <h2 id="order-dialog-title">Send this order on WhatsApp</h2>
+        </div>
+        <button class="photo-dialog-close" type="button" id="order-dialog-close" aria-label="Close the order form">×</button>
+      </div>
+
+      <p class="order-dialog-copy">Tell us who you are and where the packs should go. The message is written for you — no prices in it.</p>
+
+      <div class="order-summary" id="order-summary" aria-live="polite"></div>
+
+      <div class="field order-field">
+        <label for="order-name">Your name</label>
+        <input id="order-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="First and last name" required>
+      </div>
+
+      <div class="field order-field">
+        <label for="order-location">Your location</label>
+        <textarea id="order-location" name="location" rows="2" maxlength="240" autocomplete="street-address" placeholder="Area, street, building — anything the courier needs" required></textarea>
+      </div>
+
+      <p class="order-note">Name, location, packs and any special conditions go into the message. Prices stay here on the site.</p>
+
+      <div class="order-actions">
+        <button class="btn btn-primary" type="submit">Send on WhatsApp <span class="arrow" aria-hidden="true">↗</span></button>
+        <button class="btn btn-outline" type="button" id="order-dialog-cancel">Keep browsing</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
