@@ -704,7 +704,7 @@ body.nav-open .nav-toggle-lines span:last-child {
       rgba(13, 30, 24, 0.35) 68%,
       rgba(18, 42, 34, 0.88) 100%
     ),
-    url("Assets/hero/Hero.png");
+    url("Assets/hero/Hero.webp");
   background-position: center, center, 64% 42%;
   background-size: cover, cover, cover;
   background-repeat: no-repeat;
