@@ -674,7 +674,7 @@ body.nav-open .nav-toggle-lines span:last-child {
 
 /* ------------------------- Hero ------------------------- */
 
-.hero {
+.Hero {
   position: relative;
   overflow: hidden;
   padding-top: clamp(112px, 14vh, 150px);
@@ -683,7 +683,7 @@ body.nav-open .nav-toggle-lines span:last-child {
   color: var(--cream);
 }
 
-.hero::before {
+.Hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -704,29 +704,29 @@ body.nav-open .nav-toggle-lines span:last-child {
       rgba(13, 30, 24, 0.35) 68%,
       rgba(18, 42, 34, 0.88) 100%
     ),
-    url("Assets/hero/Hero.webp");
+    url("Assets/Hero/Hero.webp");
   background-position: center, center, 64% 42%;
   background-size: cover, cover, cover;
   background-repeat: no-repeat;
 }
 
-.hero > .container {
+.Hero > .container {
   position: relative;
   z-index: 1;
 }
 
-.hero-grid {
+.Hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
   align-items: center;
   gap: clamp(24px, 4vw, 60px);
 }
 
-.hero-copy {
+.Hero-copy {
   padding-block: 18px 44px;
 }
 
-.hero-sub {
+.Hero-sub {
   max-width: 35rem;
   margin-bottom: 34px;
   color: rgba(251, 246, 234, 0.74);
@@ -734,13 +734,13 @@ body.nav-open .nav-toggle-lines span:last-child {
   line-height: 1.55;
 }
 
-.hero-actions {
+.Hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.hero-facts {
+.Hero-facts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
@@ -774,14 +774,14 @@ body.nav-open .nav-toggle-lines span:last-child {
   line-height: 1.2;
 }
 
-.hero-visual {
+.Hero-visual {
   min-width: 0;
   display: flex;
   flex-direction: column;
   container-type: inline-size;
 }
 
-.hero-stage {
+.Hero-stage {
   --arrow-size: clamp(38px, 3.2vw, 46px);
   --pack-gap: clamp(10px, 1vw, 16px);
   --arrow-gap: clamp(10px, 1vw, 14px);
@@ -3729,23 +3729,23 @@ body.dialog-open {
 /* ------------------------- Responsive ------------------------- */
 
 @media (max-width: 1100px) {
-  .hero-grid {
+  .Hero-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 10px;
   }
 
-  .hero-copy {
+  .Hero-copy {
     max-width: 680px;
     padding-bottom: 24px;
   }
 
-  .hero-visual {
+  .Hero-visual {
     width: 100%;
     max-width: 760px;
     margin-inline: auto;
   }
 
-  .hero-facts {
+  .Hero-facts {
     margin-top: 40px;
   }
 
@@ -3866,11 +3866,11 @@ body.dialog-open {
     min-height: 76px;
   }
 
-  .hero {
+  .Hero {
     padding-top: 108px;
   }
 
-  .hero::before {
+  .Hero::before {
     background-image:
       linear-gradient(
         180deg,
@@ -3878,7 +3878,7 @@ body.dialog-open {
         rgba(18, 42, 34, 0.86) 42%,
         rgba(18, 42, 34, 0.8) 100%
       ),
-      url("Assets/hero/hero.webp");
+      url("Assets/Hero/Hero.webp");
     background-position: center, center 34%;
     background-size: cover, cover;
   }
@@ -3939,15 +3939,15 @@ body.dialog-open {
     display: none;
   }
 
-  .hero {
+  .Hero {
     padding-top: 100px;
   }
 
-  .hero-copy {
+  .Hero-copy {
     padding-top: 10px;
   }
 
-  .hero-visual {
+  .Hero-visual {
     width: calc(100% + (var(--pad) * 2));
     max-width: none;
     margin-inline: calc(-1 * var(--pad));
@@ -3957,7 +3957,7 @@ body.dialog-open {
     font-size: 0.98rem;
   }
 
-  .hero-facts {
+  .Hero-facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px 24px;
   }
@@ -4096,20 +4096,20 @@ body.dialog-open {
     font-size: clamp(3rem, 13vw, 4rem);
   }
 
-  .hero-sub {
+  .Hero-sub {
     font-size: 1.04rem;
     max-width: 34ch;
   }
 
-  .hero-actions {
+  .Hero-actions {
     gap: 9px;
   }
 
-  .hero-actions .btn {
+  .Hero-actions .btn {
     flex: 1 1 auto;
   }
 
-  .hero-facts {
+  .Hero-facts {
     margin-top: 34px;
   }
 
@@ -4278,12 +4278,12 @@ body.dialog-open {
 }
 
 @media (max-width: 430px) {
-  .hero-actions {
+  .Hero-actions {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .hero-actions .btn {
+  .Hero-actions .btn {
     width: 100%;
   }
 
