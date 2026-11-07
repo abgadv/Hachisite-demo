@@ -3878,7 +3878,7 @@ body.dialog-open {
         rgba(18, 42, 34, 0.86) 42%,
         rgba(18, 42, 34, 0.8) 100%
       ),
-      url("Assets/hero/Hero.png");
+      url("Assets/hero/hero.webp");
     background-position: center, center 34%;
     background-size: cover, cover;
   }
